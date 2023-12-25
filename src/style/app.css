@@ -1,0 +1,239 @@
+body{
+  margin: 0px !important;
+}
+.outer{
+  height: 100vh;
+  background-image: url('../../public/baseball-estadium.png');
+  background-position: bottom;
+  background-size: cover;
+}
+/* Forms */
+.error{
+  color: red;
+
+}
+
+/* form-label */
+.form-label{
+  color: white;
+  font-family: Georgia, serif;
+}
+
+/* form-label ends */
+.form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+/* btn */
+.btn-container{
+  display: flex;
+  align-content: center;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.btn{
+  align-items: center;
+  appearance: button;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 95%;
+  line-height: 0.8;
+  margin: 0;
+  padding: 10px 21px;
+  max-height: 40px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn-confirm:active {
+  background-color: #006AE8;
+}
+
+.btn-confirm:hover {
+  background-color: #1C84FF;
+}
+.btn-confirm {
+  background-color: #0276FF;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  color: #fff;
+}
+
+.btn-cancel {
+  background-color: #fb442c;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  color: #fff;
+}
+
+.btn-cancel:active {
+  background-color: #ff6868;
+}
+
+.btn-cancel:hover {
+  background-color: #ff6868;
+}
+/* Login */
+.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 73vh;
+}
+.login-label{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  height: 2rem;;
+}
+.form-container{
+  border: 1.5px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 4vh;
+  box-shadow: -8px 11px 20px black;
+}
+.form-input{
+  float: right;
+  /* padding-top: 2px;
+  padding-bottom: 2px; */
+}
+.link-container{
+  cursor: pointer;
+  color: #fff;
+}
+.link-container:hover{
+  color: #1988f8;
+}
+
+/* Login ends */
+/* Welcome  and icons*/
+.welcome,.match-container{
+  padding-left: 100px;
+}
+.team-name{
+  display: inline;
+}
+.game-container{
+  margin-bottom: 5vh;
+  border-top: 1.5px solid;
+  padding-top: 12px;
+  max-width: 70vh;
+}
+.buttons-container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.delete:hover{
+  color: #ff0000;
+  font-size: large;
+}
+.edit:hover{
+  color: #36a52e;
+  font-size: large;
+}
+.btn-icon{
+  cursor: pointer;
+}
+.accept-btn{
+  color: #36a52e;
+}
+/* Welcome ends */
+/* Match  */
+.row{
+  display: flex;
+  margin-top: 7px;
+}
+.icon-container{
+  margin-right: 10px;
+}
+.local-container,.btn-container{
+  padding-left: 30px;
+}
+/* Match ends */
+/* modal  */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* modal  ends*/
+/* select*/
+.loading{
+  animation: shadow-change 1.2s infinite;   
+}
+@keyframes shadow-change {
+  0% { 
+    border-color: rgb(70, 135, 255);
+    box-shadow: 1px 2px 6px rgb(70, 135, 255);
+  }
+  50% { 
+    box-shadow: 1px 2px 8px rgba(70, 135, 255, 0.354);
+  }
+  100% { 
+    box-shadow: 1px 2px 10px rgba(70, 135, 255, 0.893);
+  }
+}
+/* select ends*/
+/* Loader spinner*/
+
+.lds-ring div {
+  display: block;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: -0.6rem;
+  border: 0.1rem solid #fff;
+  border-radius: 68%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* End of loader spinner*/
